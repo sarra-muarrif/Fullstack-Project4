@@ -1,0 +1,427 @@
+/* أضف قواعد CSS هنا */
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+ul,
+li {
+  list-style-type: none;
+  font-family: AvenirMedium;
+}
+img {
+  max-width: 100%;
+}
+.button {
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 21px 46px 21px 47px;
+  font-family: AvenirMedium;
+  font-size: 14px;
+  line-height: 19px;
+  background: transparent;
+  cursor: pointer;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+h2 {
+  font-family: AvenirMedium;
+}
+h3,
+p,
+h1 {
+  font-family: AvenirRegular;
+}
+/*---------------------------------------------*/
+/*                    FONTS                    */
+/*--------------------------------------------*/
+
+@font-face {
+  font-family: "AvenirBold";
+  src: url("../fonts/AvenirNext-Bold.woff2") format("woff2");
+  src: url("../fonts/AvenirNext-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AvenirDemiBold";
+  src: url("../fonts/AvenirNext-DemiBold.woff2") format("woff2");
+  src: url("../fonts/AvenirNext-DemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("../fonts/AvenirNext-Medium.woff2") format("woff2");
+  src: url("../fonts/AvenirNext-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AvenirRegular";
+  src: url("../fonts/AvenirNext-Regular.woff2") format("woff2");
+  src: url("../fonts/AvenirNext-Regular.woff") format("woff");
+}
+
+/*---------------------------------------------*/
+/*                    HEADER                   */
+/*--------------------------------------------*/
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  z-index: 1;
+}
+.main-nav ul {
+  display: flex;
+  z-index: 1;
+  padding-left: 44px;
+  position: relative;
+}
+.main-nav li a {
+  color: #000000;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 20px;
+}
+.cart-group {
+  margin-left: auto;
+}
+.cart-group a {
+  color: #000000;
+  font-size: 18px;
+  padding-left: 10px;
+  font-family: AvenirMedium;
+}
+
+/*----------------------------------------------*/
+/*                    HERO                      */
+/*---------------------------------------------*/
+.hero .container {
+  display: flex;
+  padding-bottom: 400px;
+}
+.hero-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.hero-description {
+  position: relative;
+  left: 720px;
+  top: 90px;
+}
+.hero-description h1 {
+  max-width: 504px;
+  font-size: 62px;
+  line-height: 85px;
+  color: #333333;
+  font-family: "AvenirDemiBold";
+}
+.hero-description p {
+  width: 456px;
+  height: 130px;
+  font-size: 22px;
+  line-height: 26px;
+  align-items: center;
+  color: #333333;
+}
+.button.our-products {
+  color: whitesmoke;
+  background-color: #333333;
+  width: 204px;
+  height: 60px;
+}
+
+/*----------------------------------------------*/
+/*                    PRODUCTS                 */
+/*--------------------------------------------*/
+.product-show {
+  text-align: center;
+}
+.product-show .container {
+  margin-bottom: 80px;
+}
+.products-list ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 60px;
+}
+.products {
+  margin: 46px;
+}
+.product-description {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 16px;
+  color: #393939;
+}
+.button.more-products {
+  color: #333333;
+}
+
+/*---------------------------------------------*/
+/*                    MAiliNGLiST             */
+/*-------------------------------------------*/
+.mailing-list .container {
+  display: flex;
+  background-color: #ececec;
+  width: 1160px;
+  height: 302px;
+}
+.mailinglist-content {
+  position: relative;
+  top: 75px;
+  left: 190px;
+}
+.mailinglist-content h2 {
+  font-family: AvenirRegular;
+  font-size: 19px;
+  color: #333333;
+  line-height: 26px;
+  max-width: 316px;
+}
+#mailing {
+  width: 350px;
+  height: 41px;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  background-color: #ececec;
+}
+::placeholder {
+  font-size: 18px;
+  line-height: 22px;
+  align-items: center;
+  color: #ababab;
+  text-transform: capitalize;
+  padding-left: 20px;
+}
+#arrow-icon {
+  position: relative;
+  right: 45px;
+  top: 3px;
+  font-size: 17px;
+  color: #000000;
+  border: transparent;
+  cursor: pointer;
+}
+
+/*---------------------------------------------*/
+/*                    FOOTER                  */
+/*-------------------------------------------*/
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 130px 0;
+}
+.footer-nav ul {
+  display: flex;
+}
+.footer-nav li a {
+  margin: 20px;
+  font-size: 20px;
+  line-height: 27px;
+  color: #484848;
+}
+.copyrights p {
+  font-size: 18px;
+  font-family: AvenirMedium;
+  line-height: 27px;
+  color: #484848;
+}
+
+/*---------------------------------------------*/
+/*                    DETILS                  */
+/*-------------------------------------------*/
+.details-section .container {
+  display: flex;
+  margin: 50px 0;
+}
+.details_img img {
+  width: 500px;
+  height: 550px;
+  margin: 0 50px 0 145px;
+}
+.product-details h3 {
+  font-family: AvenirRegular;
+  font-size: 28px;
+  line-height: 30px;
+  color: #000000;
+}
+.product-details p {
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 411px;
+  align-items: center;
+  color: #606060;
+}
+.color-description {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+.color-description .choose-color {
+  font-size: 23px;
+  color: black;
+  padding-right: 75px;
+}
+
+#pink-button {
+  background-color: #d07071;
+  border: transparent;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+#blue-button {
+  background-color: #7074d0;
+  border: transparent;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+#black-button {
+  background-color: #333333;
+  border: transparent;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.cart-button a {
+  margin: 10px;
+}
+.button.Add-cart {
+  background: #333333;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.button.number {
+  font-size: 14px;
+  color: #212121;
+  padding: 21px 24px;
+  margin-right: 15px;
+}
+
+/*---------------------------------------------*/
+/*                    CartPage                */
+/*-------------------------------------------*/
+.cart_titel h1 {
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #333333;
+  margin: 80px 0 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.cart-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.button.check-out {
+  color: #333333;
+  padding: 20px 62px;
+}
+.all-items {
+  font-size: 18px;
+  text-transform: capitalize;
+  flex-grow: 1;
+}
+.allcount {
+  margin: 0 195px;
+}
+.alltotal {
+  margin: 0 95px;
+}
+.all-check-out {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 80px 0;
+  padding-bottom: 40px;
+  background-color: #e6e6e6;
+}
+.button.check-out-all {
+  color: whitesmoke;
+  background-color: #333333;
+  padding: 20px 62px;
+  margin-left: 161px;
+}
+.no-order {
+  color: RED;
+  font-size: 28px;
+  text-align: CENTER;
+  padding-bottom: 20px;
+}
+
+/*---------------------------------------------*/
+/*                   CONTACT                  */
+/*-------------------------------------------*/
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+.contact .container {
+  border: 2px solid rgb(184, 180, 180);
+  padding: 40px 30px;
+}
+.contact-titel {
+  text-transform: capitalize;
+  color: #380a63;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contact-paragragh {
+  text-transform: capitalize;
+  color: #0a0a0a;
+  font-size: 18px;
+  font-family: AvenirRegular;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contact-form {
+  color: rgb(54, 83, 163);
+  display: flex;
+  flex-direction: column;
+  font-family: AvenirMedium;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+input[type="text"],
+input[type="email"],
+input[type="textarea"],
+input[type="submit"] {
+  padding: 18px;
+  font-size: 18px;
+  color: black;
+  font-family: AvenirMedium;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+input[type="textarea"] {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+}
+input[type="submit"] {
+  background-color: #dfdde6;
+  padding: 12px;
+  text-transform: capitalize;
+  color: #380a63;
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+}
